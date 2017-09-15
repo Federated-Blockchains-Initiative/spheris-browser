@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spheris Browser</title>
+    <link rel="stylesheet" href="style/animations.css">
+    <link rel="stylesheet" href="style/basic.css">
+    <link rel="stylesheet" href="style/flexboxgrid.css">
+    <link rel="stylesheet" href="style/foundation.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/text.css">
+    <link rel="stylesheet" href="style/vertical-rhythm.css">
+    <link rel="stylesheet" href="style/padding.css">
+    <link rel="stylesheet" href="style/margin.css">
+    <link rel="stylesheet" href="style/normilize.css">
+    <link rel="stylesheet" href="style/fontawesome.css">
+    <link rel="stylesheet" href="style/color.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./app.js" data-container="#app"></script>
+    <script>
+      if (process.env.BROWSER_SYNC_CLIENT_URL) {
+        const current = document.currentScript;
+        const script = document.createElement('script');
+        script.src = process.env.BROWSER_SYNC_CLIENT_URL;
+        script.async = true;
+        current.parentNode.insertBefore(script, current);
+      }
+    </script>
+  </body>
+</html>
