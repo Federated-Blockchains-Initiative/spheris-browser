@@ -1,0 +1,187 @@
+* {
+    font-size: 14pt;
+    font-family: "Open Sans";
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+html {
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
+#app > div {
+    height: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.splash-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: #000;
+    color: #FFF;
+    overflow: hidden;
+}
+
+.splash-screen-fade-in {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+
+.splash-screen-fade-in-wait {
+    animation: fadeInOut 7s infinite;
+}
+
+
+.top-bar {
+    background-color: #000;
+    height: 80px;
+}
+
+.top-bar-logo {
+    display: inline-block;
+    max-width: 45px;
+}
+
+.top-bar-name {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    font-family: "Dosis";
+    color: #FFF;
+    padding-left: 20px;
+    font-size: 20pt;
+}
+
+.top-bar-search {
+    position: relative;
+    top: 5px;
+}
+
+.top-bar-info {
+    color: #FFF;
+    font-size: 9pt;
+}
+
+.top-bar-search input {
+    font-family: "Roboto";
+    color: #404040;
+    padding-left: 15px;
+}
+
+.categories {
+    padding-top: 20px;
+    background-color: #e0e0e0;
+
+    height: calc(100vh - 80px);
+    overflow: auto !important;
+}
+
+.category-header {
+    font-size: 18pt;
+    margin: 0;
+    padding: 4px 0px 4px 20px;
+    font-family: "Dosis";
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.category-title {
+    font-family: "Roboto";
+    font-size: 14pt;
+    font-weight: 300;
+    color: #404040;
+    padding: 4px 0px 4px 30px;
+}
+
+.category-title:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+.app {
+    margin-bottom: 10px;
+}
+
+.app-title {
+    font-family: "Dosis";
+    font-size: 24px;
+}
+
+.app-description {
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+.app-download-button {
+    width: 100%;
+    font-family: "Roboto";
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #e0e0e0;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.app-download-button:hover {
+    background-color: #0f7595;
+}
+
+.app-download-button:hover a {
+    color: #FFF;
+}
+
+.app-list {
+    height: calc(100vh - 100px);
+    overflow: auto !important;
+}
+
+.app-category {
+    font-family: "Roboto";
+    font-size: 10pt;
+    color: #0f7595;
+}
+
+.developer-address {
+    font-size: 7pt;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+    content: normal;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
